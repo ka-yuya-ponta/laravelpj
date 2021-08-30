@@ -51,7 +51,7 @@
           <input type="submit" value="更新">
         </td>
         <td>
-          <form action="{{ route('person.delete', ['id' => $item->id]" method="POST">
+          <form action="{{route('person.delete',['id'=>$item->id])}}" method="POST">
             @csrf
             <input type="submit" value="削除" class="third">
           </form>
